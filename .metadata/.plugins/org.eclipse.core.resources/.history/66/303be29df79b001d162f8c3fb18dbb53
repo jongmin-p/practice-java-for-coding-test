@@ -1,0 +1,21 @@
+package baekjoon;
+
+import java.util.Scanner;
+
+public class Q2439 {
+	public static void main(String[] args) {
+		int numOfStar = 0;
+		
+		System.out.print("출력할 별의 라인 수를 입력해 주세요 > ");
+		
+		Scanner sc = new Scanner(System.in);
+		numOfStar = Integer.parseInt(sc.nextLine());
+		
+		for (int i = 1; i <= numOfStar; i++) {
+			for (int j = 0; j <= i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}

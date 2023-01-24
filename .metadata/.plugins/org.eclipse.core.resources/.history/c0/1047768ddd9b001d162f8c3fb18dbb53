@@ -1,0 +1,12 @@
+package baekjoon;
+
+public class Q10871 {
+	public static void main(String[] args) {
+		int[] numArr = {};
+		int specificNumber = 0;
+		
+		if (specificNumber < 2 || specificNumber > 10000) {
+			return ;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+package com.jm.java.object;
+
+public class TestCode {
+	
+}
+
+class Buyer {
+	int money = 1000;
+	int bonusPoint = 0;
+	
+	Product[] cart = new Product[10];
+	int i = 0;
+	
+	
+	void buy(Product p) {
+		// 가진 돈이 제품 가격보다 적을 때 (잔액 부족)
+		if (money < p.price) {
+			System.out.println("잔액이 부족합니다.");
+			return ;
+		}
+		
+		
+		money -= p.price;
+		bonusPoint += p.bonusPoint;
+		
+		// 제품을 Product[] cart 에 저장한다. (물건 담기)
+		cart[i++] = p;	// 물건을 먼저 cart 배열에 담고, 배열 인덱스 1 추가 (i++)
+		
+		System.out.println(p + "을/를 구입하셨습니다.");
+	}
+}

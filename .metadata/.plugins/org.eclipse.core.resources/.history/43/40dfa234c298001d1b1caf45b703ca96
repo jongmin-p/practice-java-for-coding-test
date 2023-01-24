@@ -1,0 +1,8 @@
+package com.jm.java.object;
+
+public class TestCode {
+	Car (String color) {
+		door = 5;
+		Car(color, "auto", 4);
+	}
+}

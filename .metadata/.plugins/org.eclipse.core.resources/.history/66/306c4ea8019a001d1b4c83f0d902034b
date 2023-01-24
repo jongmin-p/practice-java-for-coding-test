@@ -1,0 +1,27 @@
+package com.jm.java.object;
+
+public class TestCode {
+	public static void main(String[] args) {
+		AudioPlayer ap = new AudioPlayer();
+	}
+	
+	
+	// 추상 클래스
+	abstract class Player {
+	   abstract void play(int pos);
+	   abstract void stop();
+	}
+
+
+	// 상속 받은 2개의 추상 메서드를 모두 구현했으므로, 이제 완전한 클래스이고 객체 생성도 가능
+	class AudioPlayer extends Player {
+	   void play(int pos) { /* 내용 생략 */ }
+	   void stop() { /* 내용 생략 */ }
+	}
+
+
+	// 이 메서드는 상속 받은 추상메서드 2개 중, 1개만 구현했으므로 여전히 추상클래스이다. (미완성)
+	abstract class AbstractPlayer extends Player {
+	   void play(int pos) { /* 내용 생략 */ }
+	}
+}

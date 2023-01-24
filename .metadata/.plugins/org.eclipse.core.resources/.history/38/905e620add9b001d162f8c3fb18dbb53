@@ -1,0 +1,8 @@
+package baekjoon;
+
+public class Q10871 {
+	public static void main(String[] args) {
+		int[] numArr = {};
+		int number = 0;
+	}
+}

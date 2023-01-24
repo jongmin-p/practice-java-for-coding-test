@@ -1,0 +1,13 @@
+package baekjoon;
+
+import java.util.Scanner;
+
+public class Q10430 {
+	public static void main(String[] args) {
+		System.out.print("숫자 3개를 입력해 주세요");
+		Scanner sc = new Scanner(System.in);
+		int A = Integer.parseInt(sc.nextLine());
+		int B = Integer.parseInt(sc.nextLine());
+		int C = Integer.parseInt(sc.nextLine());
+	}
+}

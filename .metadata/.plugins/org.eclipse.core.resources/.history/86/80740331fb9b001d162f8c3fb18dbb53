@@ -1,0 +1,12 @@
+package baekjoon;
+
+public class Q4344 {
+	public static void main(String[] args) {
+		int numOfCase = 0;			// 테스트 케이스 수
+		int numOfStd = 0;			// 학생 수
+		double eachScore = 0.0;		// 각 학생마다의 점수
+		double avgScore = 0.0;		// 평균 점수
+		
+		System.out.print("테스트 케이스의 수를 입력해 주세요 > ");
+	}
+}

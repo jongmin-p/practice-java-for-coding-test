@@ -1,0 +1,43 @@
+package com.jm.java.object;
+
+public class TvDVD extends Tv {
+	
+	DVD dvd = new DVD();		// DVD 클래스를 포함시켜서 사용
+	
+	void play() {
+		dvd.play();
+	}
+	
+	void stop() {
+		dvd.stop();
+	}
+	
+	void rew() {
+		dvd.rew();
+	}
+	
+	void ff() {
+		dvd.ff();
+	}
+}
+
+
+class Tv {
+	boolean power;
+	int channel;
+	
+	void power() { power = !power; }
+	void channelUp() { ++channel; }
+	void channelDown() { --channel; }
+}
+
+
+class DVD {
+	boolean power;
+	
+	void power() { power = !power; }
+	void play() { /* 내용 생략 */ }
+	void stop() { /* 내용 생략 */ }
+	void rew()  { /* 내용 생략 */ }
+	void ff()   { /* 내용 생략 */ }
+}

@@ -1,0 +1,38 @@
+package com.jm.java.object;
+
+public class CastingTest2 {
+    public static void main(String[] args) {
+    	
+        Car2 car = new Car2();
+        Car2 car2 = null;
+        FireEngine2 fe = null;
+
+        car.drive();
+        fe = (FireEngine2) car;     // 컴파일은 OK.     하지만, 실행 시 에러가 발생함.
+        
+        fe.drive();
+        car2 = fe;
+        car2.drive();
+    }
+}
+
+
+class Car2 {
+    String color;
+    int door;
+
+    void drive() {
+        System.out.println("drive,Brrrrrr ~");
+    }
+
+    void stop() {
+        System.out.println("stop!!!");
+    }
+}
+
+
+class FireEngine2 extends Car2 {      // 소방차
+    void water() {
+        System.out.println("water!!!");
+    }
+}

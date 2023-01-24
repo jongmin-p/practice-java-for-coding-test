@@ -1,0 +1,12 @@
+package com.jm.java.object;
+
+public class Test
+{
+	int iv;				// 인스턴스 변수 (Instance Variable)
+	static int cv;			// 클래스 변수	 (Class Variable, Static Variable)
+	
+	void method()
+	{
+		int lv = 0;		// 지역 변수 (Local Variable)
+	}
+}

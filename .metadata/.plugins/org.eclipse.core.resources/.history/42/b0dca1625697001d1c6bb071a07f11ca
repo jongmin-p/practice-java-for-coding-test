@@ -1,0 +1,38 @@
+package com.jm.java.object;
+
+public class CardTest {
+    public static void main(String[] args) {
+        System.out.println("Card.width = " + Card.width);
+        System.out.println("Card.height = " + Card.height);
+        System.out.println();
+
+        Card c1 = new Card();
+        // 인스턴스 변수의 값 변경
+        c1.kind = "Heard";
+        c1.number = 7;
+
+        Card c2 = new Card();
+        // 인스턴스 변수의 값 변경
+        c2.kind = "Spade";
+        c2.number = 4;
+
+        System.out.println("c1 은 " + c1.kind + ", " + c1.number + " 이며, 크기는 (" + c1.width + ", " + c1.height + ") 입니다.");
+        System.out.println("c2 은 " + c2.kind + ", " + c2.number + " 이며, 크기는 (" + c2.width + ", " + c2.height + ") 입니다.\n");
+
+        System.out.println("c1 의 width 와 height 를 각각 50, 80 으로 변경합니다.\n");
+        // 클래스 변수의 값 변경   ->    c1.width 대신에 c2.width 혹은 Card.width  로 해도 됨. (클래스 변수이니까)
+        c1.width = 50;
+        c1.height = 80;
+
+        System.out.println("c1 은 " + c1.kind + ", " + c1.number + " 이며, 크기는 (" + c1.width + ", " + c1.height + ") 입니다.");
+        System.out.println("c2 은 " + c2.kind + ", " + c2.number + " 이며, 크기는 (" + c2.width + ", " + c2.height + ") 입니다.\n");
+    }
+}
+
+class Card {
+    String kind;
+    int number;
+    static int width = 100;
+    static int height = 250;
+}
+

@@ -1,0 +1,36 @@
+package baekjoon;
+
+import java.util.Scanner;
+
+public class Q10871 {
+	public static void main(String[] args) {
+		int[] numArr = {};		// 난수로 채운 배열
+		int[] newArr = {};		// 기준값보다 작은 숫자만 골라서 새로운 배열 생성
+
+		int arrLength = 0;		// 배열 길이
+		int specificNumber = 0;	// 기준값 설정
+		
+		System.out.print("배열 개수와 기준 숫자를 입력하세요 (띄어쓰기로 구분) > ");
+		Scanner sc = new Scanner(System.in);
+		
+		// 배열 길이와 기준값을 입력 받는다.
+		arrLength = Integer.parseInt(sc.next());
+		specificNumber = Integer.parseInt(sc.next());
+		
+		numArr = new int[arrLength];
+		newArr = new int[arrLength];
+		
+		for (int i = 0; i < arrLength; i++) {
+			numArr[i] = (int)(Math.random() * 10) + 1;
+			
+			if(numArr[i] < specificNumber) {
+				newArr[newArr.length] = numArr[i];
+			}
+		}
+		
+		if(numArr.length == 0) {
+			newArr[0] = specificNumber - 1;
+			System.out.print("아무 숫자도 없어서 그냥 -1 해서 넣음");
+		}
+	}
+}

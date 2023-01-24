@@ -1,0 +1,11 @@
+package baekjoon;
+
+public class Q2739 {
+	public static void main(String[] args) {
+		// 숫자를 입력받는다.	(2 ~ 9)
+		// 해당 숫자에 맞는 구구단 출력한다.
+		
+		int gugudan = 0;
+		
+	}
+}

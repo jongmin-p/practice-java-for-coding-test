@@ -1,0 +1,9 @@
+package com.jm.java.object;
+
+public class TestCode {
+	public static void main(String[] args) {
+		System.out.print("Hi print");
+		System.out.println("hi println");
+		System.out.printf("hi printf");
+	}
+}
